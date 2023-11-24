@@ -1,0 +1,28 @@
+{
+    "consulta": {
+        "id": 1,
+        "data": "2019-01-01",
+        "hora": "10:00",
+        "medico": {
+            "id": 1,
+            "nome": "Dr. Médico 1",
+            "crm": "123456",
+            "especialidade": "Cardiologista"
+        },
+        "paciente": {
+            "id": 1,
+            "nome": "Paciente 1",
+            "cpf": "12345678900",
+            "dataNascimento": "1990-01-01",
+            "telefone": "11999999999"
+        },
+        "usuario": {
+            "id": 1,
+            "nome": "Usuário 1",
+            "email": "usuario@gmail.com"
+        },
+        "retorno": "nao",
+        "cancelamento": "nao",
+        "motivoCancelamento": "nenhum"
+    }
+}
