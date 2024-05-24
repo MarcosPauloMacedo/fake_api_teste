@@ -1,28 +1,716 @@
 {
-    "consulta": {
-        "id": 1,
-        "data": "2019-01-01",
-        "hora": "10:00",
-        "medico": {
-            "id": 1,
-            "nome": "Dr. Médico 1",
-            "crm": "123456",
-            "especialidade": "Cardiologista"
+  "login": {
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJ1c2VybmFtZSI6IkFkbWluIiwicm9sZSI6eyJpZCI6MSwibmFtZSI6IkFkbWluaXN0cmFkb3IiLCJkZXNjcmlwdGlvbiI6IkNvb3JkZW5hw6fDo28gZGUgY3Vyc29zIiwiYWN0aW9ucyI6W3siaWQiOjEsIm5hbWUiOiJpbmRleCIsImNvbnRyb2xsZXIiOnsiaWQiOjEsIm5hbWUiOiJUaW1lc1NoZWV0In19LHsiaWQiOjIsIm5hbWUiOiJpbmRleCIsImNvbnRyb2xsZXIiOnsiaWQiOjIsIm5hbWUiOiJTdGVwcyJ9fSx7ImlkIjozLCJuYW1lIjoiaW5kZXgiLCJjb250cm9sbGVyIjp7ImlkIjozLCJuYW1lIjoiQ2FsZW5kYXIifX0seyJpZCI6NCwibmFtZSI6ImluZGV4IiwiY29udHJvbGxlciI6eyJpZCI6NCwibmFtZSI6IkF2YWlsYWJpbGl0aWVzIn19LHsiaWQiOjUsIm5hbWUiOiJpbmRleCIsImNvbnRyb2xsZXIiOnsiaWQiOjUsIm5hbWUiOiJDb2xsYWJvcmF0b3JzIn19LHsiaWQiOjYsIm5hbWUiOiJpbmRleCIsImNvbnRyb2xsZXIiOnsiaWQiOjYsIm5hbWUiOiJMaW5rQ29sbGFib3JhdG9yc1N1YmplY3RzIn19LHsiaWQiOjcsIm5hbWUiOiJpbmRleCIsImNvbnRyb2xsZXIiOnsiaWQiOjcsIm5hbWUiOiJTdWJqZWN0cyJ9fSx7ImlkIjo4LCJuYW1lIjoiaW5kZXgiLCJjb250cm9sbGVyIjp7ImlkIjo4LCJuYW1lIjoiQ291cnNlcyJ9fSx7ImlkIjo5LCJuYW1lIjoiaW5kZXgiLCJjb250cm9sbGVyIjp7ImlkIjo5LCJuYW1lIjoiQ2xhc3NlcyJ9fSx7ImlkIjoxMCwibmFtZSI6ImluZGV4IiwiY29udHJvbGxlciI6eyJpZCI6MTAsIm5hbWUiOiJTeWxsYWJ1cyJ9fSx7ImlkIjoxMSwibmFtZSI6ImluZGV4IiwiY29udHJvbGxlciI6eyJpZCI6MTEsIm5hbWUiOiJDb250cm9sbGVycyJ9fSx7ImlkIjoxMiwibmFtZSI6ImluZGV4IiwiY29udHJvbGxlciI6eyJpZCI6MTIsIm5hbWUiOiJBY3Rpb25zIn19LHsiaWQiOjEzLCJuYW1lIjoiaW5kZXgiLCJjb250cm9sbGVyIjp7ImlkIjoxMywibmFtZSI6IlJvbGVzIn19LHsiaWQiOjE0LCJuYW1lIjoiaW5kZXgiLCJjb250cm9sbGVyIjp7ImlkIjoxNCwibmFtZSI6IlN0ZXBzIn19LHsiaWQiOjE1LCJuYW1lIjoiaW5kZXgiLCJjb250cm9sbGVyIjp7ImlkIjoxNSwibmFtZSI6IkNsYXNzU2NoZWR1bGVzIn19LHsiaWQiOjE2LCJuYW1lIjoiaW5kZXgiLCJjb250cm9sbGVyIjp7ImlkIjoxNiwibmFtZSI6IkJ1aWxkaW5ncyJ9fSx7ImlkIjoxNywibmFtZSI6ImluZGV4IiwiY29udHJvbGxlciI6eyJpZCI6MTcsIm5hbWUiOiJSb29tcyJ9fV19fX0.kx7xVzojkX3Vfk5WesHulNYBOZVicosYG8mT3La10PQ"
+  },
+  "user": {
+    "id": 1,
+    "username": "Admin",
+    "role": {
+      "id": 1,
+      "name": "Administrador",
+      "description": "Coordenação de cursos",
+      "actions": [
+        {
+          "id": 1,
+          "name": "index",
+          "controller":
+            {
+              "id": 1,
+              "name": "TimesSheet"
+            }
         },
-        "paciente": {
-            "id": 1,
-            "nome": "Paciente 1",
-            "cpf": "12345678900",
-            "dataNascimento": "1990-01-01",
-            "telefone": "11999999999"
+        {
+          "id": 2,
+          "name": "index",
+          "controller":
+            {
+              "id": 2,
+              "name": "Steps"
+            }
         },
-        "usuario": {
-            "id": 1,
-            "nome": "Usuário 1",
-            "email": "usuario@gmail.com"
+        {
+          "id": 3,
+          "name": "index",
+          "controller":
+            {
+              "id": 3,
+              "name": "Calendar"
+            }
         },
-        "retorno": "nao",
-        "cancelamento": "nao",
-        "motivoCancelamento": "nenhum"
+        {
+          "id": 4,
+          "name": "index",
+          "controller":
+            {
+              "id": 4,
+              "name": "Availabilities"
+            }
+        },
+
+
+
+
+        {
+          "id": 5,
+          "name": "index",
+          "controller":
+            {
+              "id": 5,
+              "name": "Collaborators"
+            }
+        },
+        {
+          "id": 6,
+          "name": "index",
+          "controller":
+            {
+              "id": 6,
+              "name": "LinkCollaboratorsSubjects"
+            }
+        },
+        {
+          "id": 7,
+          "name": "index",
+          "controller":
+            {
+              "id": 7,
+              "name": "Subjects"
+            }
+        },
+        {
+          "id": 8,
+          "name": "index",
+          "controller":
+            {
+              "id": 8,
+              "name": "Courses"
+            }
+        },
+        {
+          "id": 9,
+          "name": "index",
+          "controller":
+            {
+              "id": 9,
+              "name": "Classes"
+            }
+        },
+        {
+          "id": 10,
+          "name": "index",
+          "controller":
+            {
+              "id": 10,
+              "name": "Syllabus"
+            }
+        },
+
+
+
+        {
+          "id": 11,
+          "name": "index",
+          "controller":
+            {
+              "id": 11,
+              "name": "Controllers"
+            }
+        },
+        {
+          "id": 12,
+          "name": "index",
+          "controller":
+            {
+              "id": 12,
+              "name": "Actions"
+            }
+        },
+        {
+          "id": 13,
+          "name": "index",
+          "controller":
+            {
+              "id": 13,
+              "name": "Roles"
+            }
+        },{
+          "id": 14,
+          "name": "index",
+          "controller":
+            {
+              "id": 14,
+              "name": "Steps"
+            }
+        },
+        {
+          "id": 15,
+          "name": "index",
+          "controller":
+            {
+              "id": 15,
+              "name": "ClassSchedules"
+            }
+        },
+        {
+          "id": 16,
+          "name": "index",
+          "controller":
+            {
+              "id": 16,
+              "name": "Buildings"
+            }
+        },
+        {
+          "id": 17,
+          "name": "index",
+          "controller":
+            {
+              "id": 17,
+              "name": "Rooms"
+            }
+        }
+      ]
     }
+  },
+  "availabilities":[
+    {
+      "id": 1,
+      "day_of_week": "Segunda",
+      "class_schedules": "08:00",
+      "collaborator": "Colaborador 1",
+      "year": "2024",
+      "semester": "01"
+    },
+    {
+      "id": 2,
+      "day_of_week": "Terça",
+      "class_schedules": "08:00",
+      "collaborator": "Colaborador 2",
+      "year": "2024",
+      "semester": "01"
+    },
+    {
+      "id": 3,
+      "day_of_week": "Quarta",
+      "class_schedules": "08:00",
+      "collaborator": "Colaborador 3",
+      "year": "2024",
+      "semester": "01"
+    },
+    {
+      "id": 4,
+      "day_of_week": "Quinta",
+      "class_schedules": "08:00",
+      "collaborator": "Colaborador 4",
+      "year": "2024",
+      "semester": "01"
+    },
+    {
+      "id": 5,
+      "day_of_week": "Sexta",
+      "class_schedules": "08:00",
+      "collaborator": "Colaborador 5",
+      "year": "2024",
+      "semester": "01"
+    }
+  ],
+  "collaborators":[
+    {
+      "id": 1,
+      "full_name": "Colaborador 1",
+      "email": "colaborador1@gmail.com",
+      "personal_phone": "999999999",
+      "outher_phone": "999999999",
+      "user": "Admin",
+      "role": "Administrador",
+      "course_teacher": "Ads",
+      "course_coordination": "Ads"
+    },
+    {
+      "id": 2,
+      "full_name": "Colaborador 2",
+      "email": "colaborador2@gmail.com",
+      "personal_phone": "999999999",
+      "outher_phone": "999999999",
+      "user": "Admin",
+      "role": "Administrador",
+      "course_teacher": "Ads",
+      "course_coordination": "Ads"
+    },
+    {
+      "id": 3,
+      "full_name": "Colaborador 3",
+      "email": "colaborador3@gmail.com",
+      "personal_phone": "999999999",
+      "outher_phone": "999999999",
+      "user": "Admin",
+      "role": "Administrador",
+      "course_teacher": "Ads",
+      "course_coordination": "Ads"
+    },
+    {
+      "id": 4,
+      "full_name": "Colaborador 4",
+      "email": "colaborador4@gmail.com",
+      "personal_phone": "999999999",
+      "outher_phone": "999999999",
+      "user": "Admin",
+      "role": "Administrador",
+      "course_teacher": "Ads",
+      "course_coordination": "Ads"
+    },
+    {
+      "id": 5,
+      "full_name": "Colaborador 5",
+      "email": "colaborador5@gmail.com",
+      "personal_phone": "999999999",
+      "outher_phone": "999999999",
+      "user": "Admin",
+      "role": "Administrador",
+      "course_teacher": "Ads",
+      "course_coordination": "Ads"
+    }
+  ],
+  "link-collaborators-subjects":[
+    {
+      "id": 1,
+      "subject": "Matemática",
+      "teacher": "professor 1",
+      "syllabus": "Ementa 1",
+      "year": "2024",
+      "course": "Ads"
+    },
+    {
+      "id": 2,
+      "subject": "Português",
+      "teacher": "professor 2",
+      "syllabus": "Ementa 1",
+      "year": "2024",
+      "course": "Ads"
+    },
+    {
+      "id": 3,
+      "subject": "História",
+      "teacher": "professor 3",
+      "syllabus": "Ementa 1",
+      "year": "2024",
+      "course": "Ads"
+    },
+    {
+      "id": 4,
+      "subject": "Geografia",
+      "teacher": "professor 4",
+      "syllabus": "Ementa 1",
+      "year": "2024",
+      "course": "Ads"
+    },
+    {
+      "id": 5,
+      "subject": "Ciências",
+      "teacher": "professor 5",
+      "syllabus": "Ementa 1",
+      "year": "2024",
+      "course": "Ads"
+    }
+  ],
+  "subjects":[
+    {
+      "id": 1,
+      "name": "Ads",
+      "type": "Noturno",
+      "ch_syllabus": "80",
+      "ch_teacher": "001"
+    },
+    {
+      "id": 2,
+      "name": "Administração",
+      "type": "Noturno",
+      "ch_syllabus": "80",
+      "ch_teacher": "002"
+    },
+    {
+      "id": 3,
+      "name": "Contabilidade",
+      "type": "Noturno",
+      "ch_syllabus": "80",
+      "ch_teacher": "003"
+    },
+    {
+      "id": 4,
+      "name": "Agronomia",
+      "type": "Noturno",
+      "ch_syllabus": "80",
+      "ch_teacher": "004"
+    },
+    {
+      "id": 5,
+      "name": "Fisioterapia",
+      "type": "Noturno",
+      "ch_syllabus": "80",
+      "ch_teacher": "005"
+    }
+  ],
+  "courses":[
+    {
+      "id": 1,
+      "name": "Ads",
+      "periods": "5"
+    },
+    {
+      "id": 2,
+      "name": "Administração",
+      "periods": "10"
+    },
+    {
+      "id": 3,
+      "name": "Contabilidade",
+      "periods": "10"
+    },
+    {
+      "id": 4,
+      "name": "Agronomia",
+      "periods": "10"
+    },
+    {
+      "id": 5,
+      "name": "Fisioterapia",
+      "periods": "10"
+    }
+  ],
+  "classes":[
+    {
+      "id": 1,
+      "name": "1º Ano",
+      "course": "Ads",
+      "amount_students": "30",
+      "year_initial": "2024",
+      "semester_initial": "01",
+      "syllabus": "Ementa 1"
+    },
+    {
+      "id": 2,
+      "name": "2º Ano",
+      "course": "Ads",
+      "amount_students": "30",
+      "year_initial": "2024",
+      "semester_initial": "01",
+      "syllabus": "Ementa 1"
+    },
+    {
+      "id": 3,
+      "name": "3º Ano",
+      "course": "Ads",
+      "amount_students": "30",
+      "year_initial": "2024",
+      "semester_initial": "01",
+      "syllabus": "Ementa 1"
+    },
+    {
+      "id": 4,
+      "name": "4º Ano",
+      "course": "Ads",
+      "amount_students": "30",
+      "year_initial": "2024",
+      "semester_initial": "01",
+      "syllabus": "Ementa 1"
+    },
+    {
+      "id": 5,
+      "name": "5º Ano",
+      "course": "Ads",
+      "amount_students": "30",
+      "year_initial": "2024",
+      "semester_initial": "01",
+      "syllabus": "Ementa 1"
+    }
+  ],
+  "syllabus": [
+    {
+      "id": "1",
+      "year_initial": "2029",
+        "course": "Contabilidade",
+        "ch_theoretical": "230",
+        "ch_online": "70",
+        "ch_extension": "90",
+        "ch_practice": "110",
+        "subjects": "Statistics"
+    },
+    {
+      "id": "2",
+      "year_initial": "2025",
+      "course": "ADS",
+      "ch_theoretical": "200",
+      "ch_online": "100",
+      "ch_extension": "50",
+      "ch_practice": "150",
+      "subjects": "Algorithms"
+    },
+    {
+      "id": "3",
+      "year_initial": "2026",
+      "course": "ADS",
+      "ch_theoretical": "180",
+      "ch_online": "120",
+      "ch_extension": "60",
+      "ch_practice": "140",
+      "subjects": "Systems Analysis"
+    },
+    {
+      "id": "4",
+      "year_initial": "2027",
+      "course": "ADS",
+      "ch_theoretical": "220",
+      "ch_online": "80",
+      "ch_extension": "70",
+      "ch_practice": "130",
+      "subjects": "Software Design"
+    },
+    {
+      "id": "5",
+      "year_initial": "2028",
+      "course": "ADS",
+      "ch_theoretical": "210",
+      "ch_online": "90",
+      "ch_extension": "80",
+      "ch_practice": "120",
+      "subjects": "Network Design"
+    }
+  ],
+  "controllers": [
+    {
+      "id": "1",
+      "surname": "Courses",
+      "name_class": "ControllerA",
+      "description": "This is Controller A"
+    },
+    {
+        "id": "2",
+        "surname": "Classes",
+        "name_class": "ControllerB",
+        "description": "This is Controller B"
+    },
+    {
+        "id": "3",
+        "surname": "Subjects",
+        "name_class": "ControllerC",
+        "description": "This is Controller C"
+    },
+    {
+      "id": "4",
+      "surname": "Collaborators",
+      "name_class": "ControllerD",
+      "description": "This is Controller D"
+    },
+    {
+      "id": "5",
+      "surname": "Syllabus",
+      "name_class": "ControllerE",
+      "description": "This is Controller E"
+    }
+  ],
+  "actions": [
+    {
+      "id": "1",
+      "surname": "index",
+      "name_action": "index",
+      "controller": "Subjects",
+      "description": "This is action"
+    },
+    {
+      "id": "2",
+      "surname": "edit",
+      "name_action": "edit",
+      "controller": "Collaborators",
+      "description": "This is action"
+    },
+    {
+      "id": "3",
+      "surname": "delete",
+      "name_action": "delete",
+      "controller": "Collaborators",
+      "description": "This is action"
+    },
+    {
+      "id": "3",
+      "surname": "view",
+      "name_action": "view",
+      "controller": "Collaborators",
+      "description": "This is action"
+    },
+    {
+      "id": "4",
+      "surname": "index",
+      "name_action": "index",
+      "controller": "Collaborators",
+      "description": "This is action"
+    },
+    {
+      "id": "4",
+      "surname": "delete",
+      "name_action": "delete",
+      "controller": "Subjects",
+      "description": "This is action"
+    }
+  ],
+  "roles": [
+    {
+      "id": "1",
+      "name_profile": "Admin",
+      "type": "ADMIN",
+      "description": "Admin role with all permissions",
+      "action": ["CREATE", "READ", "UPDATE", "DELETE"]
+    },
+    {
+      "id": "2",
+      "name_profile": "Theacher",
+      "type": "THEACHER",
+      "description": "theacher role with limited permissions",
+      "action": ["READ"]
+    },
+    {
+      "id": "3",
+      "name_profile": "coordinator",
+      "type": "coordinator",
+      "description": "coordinator role with minimal permissions",
+      "action": ["CREATE", "READ", "UPDATE", "DELETE"]
+    }
+  ],
+  "steps": [
+    {
+      "id": "1",
+      "title": "Step 1",
+      "date_initial": "2022-01-01",
+      "date_final": "2022-01-31",
+      "description": "This is the first step",
+      "activated": true,
+      "teacher": true,
+      "coordinator": false
+    },
+    {
+      "id": "2",
+      "title": "Step 2",
+      "date_initial": "2022-02-01",
+      "date_final": "2022-02-28",
+      "description": "This is the second step",
+      "activated": false,
+      "teacher": false,
+      "coordinator": true
+    },
+    {
+      "id": "3",
+      "title": "Step 3",
+      "date_initial": "2022-03-01",
+      "date_final": "2022-03-31",
+      "description": "This is the third step",
+      "activated": true,
+      "teacher": true,
+      "coordinator": true
+    },
+    {
+      "id": "4",
+      "title": "Step 4",
+      "date_initial": "2022-04-01",
+      "date_final": "2022-04-30",
+      "description": "This is the fourth step",
+      "activated": false,
+      "teacher": true,
+      "coordinator": false
+    },
+    {
+      "id": "5",
+      "title": "Step 5",
+      "date_initial": "2022-05-01",
+      "date_final": "2022-05-31",
+      "description": "This is the fifth step",
+      "activated": true,
+      "teacher": false,
+      "coordinator": true
+    }
+  ],
+  "classSchedules": [
+    {
+      "id": "1",
+      "day_week": "Monday",
+      "shift": "Morning",
+      "type_time": "Lecture",
+      "time_initial": "08:00",
+      "time_final": "10:00"
+    },
+    {
+      "id": "2",
+      "day_week": "Tuesday",
+      "shift": "Afternoon",
+      "type_time": "Lab",
+      "time_initial": "14:00",
+      "time_final": "16:00"
+    },
+    {
+      "id": "3",
+      "day_week": "Wednesday",
+      "shift": "Evening",
+      "type_time": "Lecture",
+      "time_initial": "18:00",
+      "time_final": "20:00"
+    },
+    {
+      "id": "4",
+      "day_week": "Thursday",
+      "shift": "Morning",
+      "type_time": "Lab",
+      "time_initial": "08:00",
+      "time_final": "10:00"
+    },
+    {
+      "id": "5",
+      "day_week": "Friday",
+      "shift": "Afternoon",
+      "type_time": "Lecture",
+      "time_initial": "14:00",
+      "time_final": "16:00"
+    }
+  ],
+  "buildings": [
+    {
+      "id": "1",
+      "location": "predio 01",
+      "description": "Building in predio 01"
+    },
+    {
+      "id": "2",
+      "location": "Predio 02",
+      "description": "Building in predio 02"
+    }
+  ],
+  "places": [
+    {
+      "id": "1",
+      "name_room": "Room A",
+      "build": "predio 01",
+      "amount": 30
+    },
+    {
+      "id": "2",
+      "name_room": "Room B",
+      "build": "predio 02",
+      "amount": 25
+    },
+    {
+      "id": "3",
+      "name_room": "Room C",
+      "build": "predio 02",
+      "amount": 20
+    },
+    {
+      "id": "4",
+      "name_room": "Room D",
+      "build": "predio 01",
+      "amount": 15
+    },
+    {
+      "id": "5",
+      "name_room": "Room E",
+      "build": "predio 02",
+      "amount": 10
+    }
+  ]
 }
